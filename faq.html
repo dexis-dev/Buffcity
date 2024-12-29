@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    .mobile-area-container {
+        max-width: 600px;
+        margin: auto;
+        display: none;
+        padding: 0 15px;
+    }
+    .mobile-area-box {
+        width: 100%;
+        margin-top: 20px;
+        border-radius: 20px;
+        background: rgb(0,87,255);
+        background: linear-gradient(90deg, rgba(0,87,255,1) 0%, rgba(36,0,255,1) 100%);
+    }
+    .mobile-area-box-1 {
+        width: 100%;
+        margin-top: 20px;
+        border-radius: 20px;
+        background: rgb(255, 255, 255);
+        border: 1px solid #dbdbdb;
+    }
+   
+    @media (max-width: 700px) {
+        
+        .mobile-area-container {
+            display: block; 
+        }
+    }
+</style>
+
+<body>
+ 
+  <header class="header">
+    <section class="header_section">
+        <a href="index.html">
+            <img class="header_section_logo" src="./img/Logo BuffCity.png" alt="logo">
+        </a>
+        <ul>
+            <li><a class="header_section_link" href="faq.html">FAQ</a></li>
+            <li><a class="header_section_link" href="#" onclick="openModal()">Контакты</a></li>
+            <div id="myModal" class="modal">
+
+                <!-- Содержимое модального окна -->
+                <div class="modal-content">
+                  <span class="close" onclick="closeModal()">&times;</span>
+                  <h1 class="contact_title">Контакты</h2>
+                    <p class="question">По любым вопросам обращайтесь по  контактам укзанном ниже</p>
+                  <div class="icons-container">
+                  <div class="icons">
+                    <img src="img/icons/telegram.svg" width="30" alt="">
+                    <a class="telegra-icon"  href="#">
+                        Telegram 
+                    </a>
+                  </div>
+                    <div class="icons">
+                    <img src="img/icons/discord.svg" width="30"  alt="">
+                    <a class="telegra-icon" href="#">
+                        Discord 
+                    </a>
+                  </div>
+                </div>
+                <div class="icons-container">
+                  <div class="icons"> 
+                    <img  src="img/icons/vk.svg" width="30" alt="">
+                    <a class="telegra-icon" href="#">
+                        VK 
+                    </a>
+                  </div>
+                </div>
+                </div>
+              
+              </div>
+            <li><a class="header_section_link" href="#">Отзывы</a></li>
+        </ul>
+        <button class="header_section_button">100$ FOR FREE</button>
+    </section>
+    <section class="header_section right_side">
+        <a href="pages/payed/index.html">
+            <p class="right_side_title">Проверить статус заказа</p>
+        </a>
+        <a href="pages/index.html">
+            <button class="right_side_button">
+            <img class="right_side_button_image" src="./img/steam.png" alt="steam">
+            Пополнить BUFF
+        </button>
+        </a>
+    </section>
+
+    <ion-icon class="header_open" name="menu-outline"></ion-icon>
+
+    <div class="header_burger">
+        <ion-icon class="header_burger_close" name="close-outline"></ion-icon>
+        <ul class="header_burger_links">
+            <li><a class="header_burger_link" href="pages/index.html">Пополнить Buff</a></li>
+            <li><a class="header_burger_link" href="faq.html">FAQ</a></li>
+            <li><a class="header_burger_link" href="#"  onclick="openModals()">Контакты</a></li>
+            <div id="myModals" class="modal">
+
+                <!-- Содержимое модального окна -->
+                <div class="modal-content">
+                  <span class="closes" onclick="closeModals()">&times;</span>
+                  <h2>Контакты</h2>
+                  <p class="question">По любым вопросам обращайтесь по  контактам укзанном ниже</p>
+                  <div class="icons-container">
+                  <div class="icons">
+                    <img src="img/icons/telegram.svg"  alt="">
+                    <a class="telegra-icon" href="#">
+                        telegram
+                    </a>
+                  </div>
+                    <div class="icons">
+                    <img src="img/icons/discord.svg"   alt="">
+                    <a class="telegra-icon" href="#">
+                        discord
+                    </a>
+                  </div>
+                </div>
+                <div class="icons-container">
+                  <div class="icons"> 
+                    <img  src="img/icons/vk.svg" alt="">
+                    <a class="telegra-icon" href="#">
+                        VKontakte
+                    </a>
+                  </div>
+                </div>
+                </div>
+              
+              </div>
+            <li><a class="header_burger_link" href="#">Отзывы</a></li>
+            <li><a class="header_burger_link" href="#">100$ FOR FREE</a></li>
+            <li><a class="header_burger_link" href="pages/payed/index.html">Проверить статус заказа</a></li>
+        </ul>
+    </div>
+</header>
+
+
+
+
+
+
+
+    <div class="faq-container">
+        <p class="faq-text">
+            FAQ
+        </p>
+        <p class="faq-text-ru">
+            Вопрос / Ответ
+        </p>
+    </div>
+
+
+    <section class="section-faq animation">
+        <div class="accordion">
+            <div class="question">
+                <span class="question-text">Здесь будет вопрос FAQ</span>
+                <span class="icon">   ⬇</span>
+            </div>
+            <div class="answer">Здесь будет ответ.</div>
+        </div><br>
+        <div class="accordion">
+            <div class="question">
+                <span class="question-text">Здесь будет вопрос FAQ</span>
+                <span class="icon">   ⬇</span>
+            </div>
+            <div class="answer">Здесь будет ответ.</div>
+        </div><br>
+        <div class="accordion">
+            <div class="question">
+                <span class="question-text">Здесь будет вопрос FAQ</span>
+                <span class="icon">   ⬇</span>
+            </div>
+            <div class="answer">Здесь будет ответ.</div>
+        </div><br>
+        <div class="accordion">
+            <div class="question">
+                <span class="question-text">Здесь будет вопрос FAQ</span>
+                <span class="icon">   ⬇</span>
+            </div>
+            <div class="answer">Здесь будет ответ.</div>
+        </div><br>
+        <div class="accordion">
+            <div class="question">
+                <span class="question-text">Здесь будет вопрос FAQ</span>
+                <span class="icon">   ⬇</span>
+            </div>
+            <div class="answer">Здесь будет ответ.</div>
+        </div><br>
+        <div class="accordion">
+            <div class="question">
+                <span class="question-text">Здесь будет вопрос FAQ</span>
+                <span class="icon">   ⬇</span>
+            </div>
+            <div class="answer">Здесь будет ответ.</div>
+        </div><br>
+      </section>
+
+<script>
+        document.addEventListener('DOMContentLoaded', function () {
+      const questions = document.querySelectorAll('.question');
+    
+      questions.forEach(question => {
+        question.addEventListener('click', function () {
+          const answer = this.nextElementSibling;
+    
+          if (answer.style.display === 'block') {
+            answer.style.display = 'none';
+          } else {
+            answer.style.display = 'block';
+          }
+        });
+      });
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+      const questions = document.querySelectorAll('.question');
+    
+      questions.forEach(question => {
+        question.addEventListener('click', function () {
+          const answer = this.nextElementSibling;
+          this.classList.toggle('open');
+          
+          if (answer.style.maxHeight) {
+            answer.style.maxHeight = null;
+          } else {
+            answer.style.maxHeight = answer.scrollHeight + 'px';
+          }
+        });
+      });
+    });
+    
+    document.addEventListener('DOMContentLoaded', function () {
+      const animatedElement = document.getElementById('animatedElement');
+    
+      window.addEventListener('scroll', function () {
+        const elementPosition = animatedElement.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+    
+        if (elementPosition < windowHeight / 1.5) {
+          animatedElement.classList.add('active');
+        } else {
+          animatedElement.classList.remove('active');
+        }
+      });
+    });
+    
+    document.addEventListener('DOMContentLoaded', function () {
+      const openModalBtn = document.getElementById('openModalBtn');
+      const modal = document.getElementById('myModal');
+      const closeBtn = document.querySelector('.close');
+    
+      openModalBtn.addEventListener('click', function () {
+        modal.style.display = 'block';
+      });
+    
+      closeBtn.addEventListener('click', function () {
+        modal.style.display = 'none';
+      });
+    
+      window.addEventListener('click', function (event) {
+        if (event.target === modal) {
+          modal.style.display = 'none';
+        }
+      });
+    });
+    
+</script>
+<script src="js/script.js"></script>
+</body>
+</html>

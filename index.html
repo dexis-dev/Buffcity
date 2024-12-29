@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    .mobile-area-container {
+        max-width: 600px;
+        margin: auto;
+        display: none;
+        padding: 0 15px;
+    }
+    .mobile-area-box {
+        width: 100%;
+        margin-top: 20px;
+        height: auto;
+        border-radius: 30px;
+        background: rgb(0,87,255);
+        background: linear-gradient(90deg, rgba(0,87,255,1) 0%, rgba(36,0,255,1) 100%);
+    }
+    .mobile-area-box-1 {
+        width: 100%;
+        margin-top: 20px;
+        border-radius: 20px;
+        background-color: rgba(74, 136, 255, 0.1);
+        border: 1px solid #dbdbdb;
+    }
+   
+    @media (max-width: 700px) {
+        .grid-container {
+            display: none;
+        }
+        .mobile-area-container {
+            display: block; 
+        }
+        
+    }
+    .imgs {
+        display: block;
+    }
+    .mones {
+        display: none;
+    }
+    @media (max-width: 700px) {
+        .imgs {
+            display: none;
+        }
+        .mones {
+            margin-top: -230px;
+            display: block;
+            margin-left: -16px;
+        }
+    }
+    @media (max-width: 394px) {
+        
+    }
+    @media(max-width:405px) {
+        .mobile-ellipse {
+            margin-left: -50px;
+        }
+    }
+    @media(max-width:360px) {
+        .mobile-ellipse {
+            margin-left: -100px;
+        }
+    }
+    @media(max-width:317px) {
+        .mobile-ellipse {
+            display: none;
+        }
+    }
+</style>
+<body>
+ 
+    <header class="header">
+        <section class="header_section">
+            <a href="index.html">
+                <img class="header_section_logo" src="./img/Logo BuffCity.png" alt="logo">
+            </a>
+            <ul>
+                <li><a class="header_section_link" href="faq.html">FAQ</a></li>
+                <li><a class="header_section_link" href="#" onclick="openModal()">Контакты</a></li>
+                <div id="myModal" class="modal">
+
+                    <!-- Содержимое модального окна -->
+                    <div class="modal-content">
+                      <span class="close" onclick="closeModal()">&times;</span>
+                      <h1 class="contact_title">Контакты</h2>
+                        <p class="question">По любым вопросам обращайтесь по  контактам укзанном ниже</p>
+                      <div class="icons-container">
+                      <div class="icons">
+                        <img src="img/icons/telegram.svg" width="30" alt="">
+                        <a class="telegra-icon"  href="#">
+                            Telegram 
+                        </a>
+                      </div>
+                        <div class="icons">
+                        <img src="img/icons/discord.svg" width="30"  alt="">
+                        <a class="telegra-icon" href="#">
+                            Discord 
+                        </a>
+                      </div>
+                    </div>
+                    <div class="icons-container">
+                      <div class="icons"> 
+                        <img  src="img/icons/vk.svg" width="30" alt="">
+                        <a class="telegra-icon" href="#">
+                            VK 
+                        </a>
+                      </div>
+                    </div>
+                    </div>
+                  
+                  </div>
+                <li><a class="header_section_link" href="#">Отзывы</a></li>
+            </ul>
+            <button class="header_section_button">100$ FOR FREE</button>
+        </section>
+        <section class="header_section right_side">
+            <a href="pages/payed/index.html">
+                <p class="right_side_title">Проверить статус заказа</p>
+            </a>
+            <a href="pages/index.html">
+                <button class="right_side_button">
+                <img class="right_side_button_image" src="./img/steam.png" alt="steam">
+                Пополнить BUFF
+            </button>
+            </a>
+        </section>
+
+        <ion-icon class="header_open" name="menu-outline"></ion-icon>
+
+        <div class="header_burger">
+            <ion-icon class="header_burger_close" name="close-outline"></ion-icon>
+            <ul class="header_burger_links">
+                <li><a class="header_burger_link" href="pages/index.html">Пополнить Buff</a></li>
+                <li><a class="header_burger_link" href="faq.html">FAQ</a></li>
+                <li><a class="header_burger_link" href="#"  onclick="openModals()">Контакты</a></li>
+                <div id="myModals" class="modal">
+
+                    <!-- Содержимое модального окна -->
+                    <div class="modal-content">
+                      <span class="closes" onclick="closeModals()">&times;</span>
+                      <h2>Контакты</h2>
+                      <p class="question">По любым вопросам обращайтесь по  контактам укзанном ниже</p>      
+                      <div class="icons-container">
+                      <div class="icons">
+                        <img src="img/icons/telegram.svg"  alt="">
+                        <a class="telegra-icon" href="#">
+                            telegram
+                        </a>
+                      </div>
+                        <div class="icons">
+                        <img src="img/icons/discord.svg"   alt="">
+                        <a class="telegra-icon" href="#">
+                            discord
+                        </a>
+                      </div>
+                    </div>
+                    <div class="icons-container">
+                      <div class="icons"> 
+                        <img  src="img/icons/vk.svg" alt="">
+                        <a class="telegra-icon" href="#">
+                            VKontakte
+                        </a>
+                      </div>
+                    </div>
+                    </div>
+                  
+                  </div>
+                <li><a class="header_burger_link" href="#">Отзывы</a></li>
+                <li><a class="header_burger_link" href="#">100$ FOR FREE</a></li>
+                <li><a class="header_burger_link" href="pages/payed/index.html">Проверить статус заказа</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <div class="setka">
+    <!--Маин 2 часть сайта-->
+    <div class="phto">
+    <div class="main-container">
+        <div class="main-box">
+            <p class="left-main-title-users">
+                <img src="img/users.png" alt="users">
+                Проверено 100% пользователями
+            </p>
+            <p class="left-main-title-h1 ">
+                Buffcity - пополните ваш баланс <span style="color: blue;" id="word">Steam</span> в пару кликов
+            </p>
+            <style>
+                #word {
+                    overflow: hidden;
+                    display: inline-block;
+                    vertical-align: bottom;
+                }
+            
+                .strike-through {
+                    position: relative;
+                    animation: strike-through 0.5s forwards;
+                }
+            
+                @keyframes strike-through {
+                    0% { width: 0; }
+                    100% { width: 100%; }
+                }
+            
+                #buff {
+                    opacity: 0;
+                    color: rgb(0, 140, 255); /* изменение цвета на желтый */
+                    animation: fade-in 0.5s forwards;
+                }
+            
+                @keyframes fade-in {
+                    from {
+                        opacity: 0;
+                    }
+                    to {
+                        opacity: 1;
+                    }
+                }
+            </style>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var word = document.getElementById('word');
+                    var text = word.textContent;
+            
+                    // Имитация стирания слова
+                    word.innerHTML = '';
+                    for (var i = 0; i < text.length; i++) {
+                        var span = document.createElement('span');
+                        span.textContent = text[i];
+                        span.classList.add('strike-through');
+                        word.appendChild(span);
+                    }
+            
+                    // Замена слова после окончания анимации
+                    setTimeout(function() {
+                        word.textContent = 'Buff';
+                        word.id = 'buff'; // Добавляем id для нового слова
+                    }, 500);
+                });
+            </script>
+            
+            <p class="left-main-title-paragpaph">
+                BuffCity это быстрое и удобное пополнение <br> баланса вашего 
+                Steam аккаунта
+            </p>
+            <section class="left-main-for-button">
+                <a href="pages/index.html">
+                    <button class="left-main-button">
+                        <img class="right_side_button_image" src="img/steam.png" width="30px" alt="steam">
+                        Пополнить BUFF
+                    </button>
+                </a>
+
+                <a class="left-main-more" href="#">
+                    Больше информации >
+                </a>
+            </section>
+            <section class="left-main-for-button">
+                <div class="main-inside-text-box">
+                    <p class="main-number">
+                        1.000
+                    </p>
+                    <P>
+                        Заказов за все время
+                    </P>
+                </div>
+                <div class="classclass" style="height: 2px; background-color: #00000026;"></div>
+                <div class="main-inside-text-box">
+                    <p class="main-number">
+                        100.000
+                    </p>
+                    <P>
+                        Клиентов за все время
+                    </P>
+                </div>  
+            </section>
+        </div>
+        <div class="main-box">
+            <img class="imgs" src="img/newhero.png" width="100%" alt="">
+            </div>
+        
+    </div>
+    <!--Конец-->
+    <div class="mones">
+        <img class="mones__img" src="img/Монетки.svg" alt="mones__img" style="width: 578.88px;">
+    </div>
+
+    <!--3 часть сайта-->
+    <div class="area-content-container ">
+        <section class="inside-top">
+            <div class="area-box-left">
+                <div class="area-flex-box ">
+                    <div class="area-flex">
+                        <p class="area-text-left">
+                            Это удобно
+                        </p>
+                        <p class="area-paragraph-left ">
+                            Наш сервис это гармония удобства и практичности
+                        </p>
+                    </div>
+                    <div class="area-flex-box">
+                        <img class="area-img" src="img/6e56bf472116acd1436a69764cfc9c36229982b07e071dadf343ed3f4de3ef67 1.png" width="375px" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="area-box-left-top">
+                <p class="area-box-left-top-text and-box">
+                    Сделайте правильный выбор, <br>
+                    выберите нас
+                </p>
+                <img class="tike" src="img/Свечение.png" alt="">
+                <p class="area-box-left-top-paragraph">
+                    Работаем с 20хх года
+                </p>
+            </div><br>
+        </section>
+        <section class="inside-top">
+            <div class="area-box-right">
+                <img class="area-box-right_image" src="./img/бенто 2.svg"  alt="">
+            </div>
+            <div class="area-box-right-top">
+                <p class="area-box-right-top-paragraph">
+                    BuffCity - ваш лучший помощник в пополнении
+                </p>
+            </div>
+        </section>
+    </div>
+    <!--Конец-->
+
+
+    <!--4 часть-->
+    <div class="airo-container">
+        <div class="airo-box">
+            <section class="airo-inside-box">
+                <div class="airo-for-texts">
+                    <p class="airo-comment-text">
+                        Не теряйте время
+                    </p>
+                    <p class="airo-text">
+                        Закажите прямо сейчас, пока <br> не поздно
+                    </p>
+                    <p class="airo-text-paragraph">
+                        Просто нажмите кнопку пополнить BUFF
+                    </p>
+                    <a href="pages/index.html">
+                        <button class="left-airo-button">
+                            <img class="right_side_button_image" src="img/steam.png" width="30px" alt="steam">
+                            Пополнить Steam
+                        </button>
+                    </a>
+                </div>
+            </section>
+            <section class="airo-inside-box">
+                <img src="img/coin.svg" width="100%" alt="">
+            </section>
+        </div>
+    </div>
+    <!--Конец-->
+
+    <!--5 часть-->
+    <div class="payment-container">
+        <div class="payment-box">
+            <div class="payment-left-box-1">
+                <div class="inside-left">
+                    <p class="payment-h1-left">
+                        Alipay
+                    </p>
+                    <img class="alipay-logo" src="img/Лого алипея.png" alt="">
+                    <a class="left-payment-more" href="#">
+                        Пополнить >
+                    </a>
+                </div>
+            </div><br>
+
+            <div class="payment-left-box-2">
+                <div class="inside-left-top">
+                    <div class="inside-block">
+                        <p class="payment-left-top-h1">
+                            Пополнение Wechat. <br> Прямо сейчас
+                        </p>
+                        <a class="left-payment-more" href="#">
+                            Пополнить >
+                        </a>
+                    </div>
+                    <img class="payment-logo" src="img/Витек.png" width="200" alt="">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="payment-right-box">
+            <p class="payment-right-text">
+                Buff163
+            </p> 
+            <p class="payment-right-h1">
+                Пополните Buff163 <br>
+                прямо сейчас!
+            </p>
+            <a class="right-payment-more" href="#">
+                Пополнить >
+            </a>
+            <img class="cos-top" src="https://dgvdyislmj77y.cloudfront.net/eyJidWNrZXQiOiJ0cmFkZWl0LXdpa2kiLCJrZXkiOiJpbWFnZXMvaXRlbXMvc3RpY2tlci18LWRyYWdvbi1sb3JlLXN1cmYtYXZhLShmb2lsKS53ZWJwIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoiMjgwIiwiaGVpZ2h0IjoiMjExIiwiZml0IjoiY292ZXIifSwid2VicCI6eyJlZmZvcnQiOjMsInF1YWxpdHkiOjgwfX19" alt="">
+            <div class="right-back">
+                <img src="img/Ellipse.svg" width="100%" alt="">
+            </div>
+        </div>
+    </div>
+
+     <!-- Мобильная адаптация -->
+     <div class="mobile-area-container">
+        <div class="mobile-area-box">
+            <p class="mobile-area-text">
+                Это удобно
+            </p>
+            <p class="mobile-area-paragraph">
+                Наш сервис это гармония удобства и практичности
+            </p><br>
+            <center><img src="img/2-s.svg" class="mobile-area-img" width="100%" alt=""></center>
+        </div>
+        <div class="mobile-area-box">
+            <a href="#"><img src="img/bento-2.svg" width="100%" alt=""></a>
+        </div>
+        <div class="mobile-area-box-1">
+            <p class="mobile-top-area-text">
+                Сделайте правильный выбор, <br>выберите нас
+            </p>
+            <p class="mobile-top-area-text-1">
+                Работаем с 20xx года
+            </p>
+        </div>
+        <div class="mobile-area-box-1">
+            <p class="mobile-top-area-text mobile-top-area-text-1 top">
+                BuffCity - ваш лучший помощник  в пополнении
+            </p>
+        </div>
+        <div class="mobile-area-box">
+            <p class="mobile-texts">
+                Не теряйте время!
+            </p>
+            <p class="mobile-top-area-text-3">
+                Закажите прямо сейчас, пока <br> не поздно
+            </p>
+            <p class="mobile-tope-text">
+                Просто нажмите кнопку пополнить BUFF
+            </p>
+            <center><button class="left-airo-button">
+                <img class="right_side_button_image" src="img/steam.png" width="30px" alt="steam">
+                Пополнить Steam
+            </button></center>
+            <center><img class="mobile-area-image" src="img/coin.svg" width="80%" alt=""></center>
+        </div>
+        <div class="mobile-area-box-1">
+            <p class="payment-text">
+                Пополнение Wechat. <br> Прямо сейчас
+            </p><br>
+            <a class="mobile-left-payment-more" href="pages/steam.html">
+                Пополнить >
+            </a><br><br><br><br>
+            <center><img src="img/mobile.svg" width="85%" alt=""></center>
+        </div>
+        <div class="mobile-area-box-1">
+            <div class="mobile-alipay-cont">
+                <p class="alipay-text">
+                    Alipay
+                </p>
+                <img src="img/Лого алипея.svg" class="logo-top" alt="">
+                <a class="mobile-left-payment-mores" href="#">
+                    Пополнить >
+                </a>
+            </div>
+        </div>
+        <div class="mobile-area-box-4">
+            <p class="mobile-4-text">
+                Buff163
+            </p>
+            <p class="mobile-4-h1">
+                Пополните Buff163 <br> прямо сейчас!
+            </p><br>
+            <a class="mobile-left-payment-4" href="#">
+                Пополнить >
+            </a>
+            <img class="mobile-ellipse" src="img/mobile-Ellipse.svg" alt="">
+        </div>
+        <div class="grid-containers">
+            <div class="grid-background">
+                <p class="grid-text-h fade-in-out">
+                    <b>
+                        Делаем людей счастливыми, <br>
+                        а их Steam баланс полным
+                    </b>
+                </p>
+                <p class="grid-text fade-in-out" style="font-size: 13px;">
+                    Берём одну из самых маленьких <br> коммисий
+                </p>
+                <a href="#">
+                    <center><button class="mobile-grid-button">
+                        <img class="right_side_button_image" src="img/steam.png" width="30px" alt="steam">
+                        Пополнить buff
+                    </button>
+                </a></center>
+                <div class="neon-container fade-in-out">
+                    <img  src="img/neon/2.svg" width="200" alt="">
+                </div>
+            </div>
+          </div>
+    </div>
+    <!-- Конец мобильной адаптации -->
+
+
+    <!--6 часть-->
+    <div class="grid-container">
+        <div class="grid-background">
+            <p class="grid-text-h1 fade-in-out">
+                <b>
+                    Делаем людей счастливыми, <br>
+                    а их Steam баланс полным
+                </b>
+            </p>
+            <p class="grid-text-h1 fade-in-out" style="font-size: 15px;">
+                Берём одну из самых маленьких коммисий
+            </p>
+            <a href="pages/index.html">
+                <center><button class="left-main-button top fade-in-out">
+                    <img class="right_side_button_image" src="img/steam.png" width="30px" alt="steam">
+                    Пополнить buff
+                </button></center>
+            </a>
+            <div class="neon-container fade-in-out">
+                <img class="neon-img" src="img/neon/2.svg" width="400" alt="">
+                <img class="neon-img-1" src="img/neon/2.svg" width="400" alt="">
+            </div>
+        </div>
+      </div>
+      
+    
+    <!--Конец-->
+
+    <script>
+        const text = "Steam в пару кликов";
+    
+        let index = 0;
+    
+        function typeWriter() {
+            const button = document.querySelector('.animated-text');
+            button.textContent += text[index];
+            index++;
+    
+            if (index < text.length) {
+                setTimeout(typeWriter, 100);
+            }
+        }
+    
+        typeWriter();
+    </script>
+    
+
+
+    
+    <!--Мобильная адаптация-->
+
+
+
+
+</div>
+    <!--Футер-->
+    <footer class="col"></footer>
+    <footer class="footer-container">
+        <img src="img/logo.svg" alt="">
+    </footer>
+    </div>
+
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

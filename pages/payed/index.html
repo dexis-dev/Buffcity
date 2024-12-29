@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>BuffCity</title>
+</head>
+<body>
+    <div class="global">
+        <header class="header">
+            <section class="header_section">
+                <a href="../../index.html">
+                    <img class="header_section_logo" src="../../img/Logo BuffCity.png" alt="logo">
+                </a>
+                <ul>
+                    <li><a class="header_section_link" href="../../faq.html">FAQ</a></li>
+                    <li><a class="header_section_link" href="#" onclick="openModal()">Контакты</a></li>
+                    <div id="myModal" class="modal">
+    
+                        <!-- Содержимое модального окна -->
+                        <div class="modal-content">
+                          <span class="close" onclick="closeModal()">&times;</span>
+                          <h1 class="contact_title">Контакты</h2>
+                            <p class="question">По любым вопросам обращайтесь по  контактам укзанном ниже</p>
+                          <div class="icons-container">
+                          <div class="icons">
+                            <img src="../../img/icons/telegram.svg" width="30" alt="">
+                            <a class="telegra-icon"  href="#">
+                                Telegram 
+                            </a>
+                          </div>
+                            <div class="icons">
+                            <img src="../../img/icons/discord.svg" width="30"  alt="">
+                            <a class="telegra-icon" href="#">
+                                Discord 
+                            </a>
+                          </div>
+                        </div>
+                        <div class="icons-container">
+                          <div class="icons"> 
+                            <img  src="../../img/icons/vk.svg" width="30" alt="">
+                            <a class="telegra-icon" href="#">
+                                VK 
+                            </a>
+                          </div>
+                        </div>
+                        </div>
+                      
+                      </div>
+                    <li><a class="header_section_link" href="#">Отзывы</a></li>
+                </ul>
+                <button class="header_section_button">100$ FOR FREE</button>
+            </section>
+            <section class="header_section right_side">
+                <a href="index.html">
+                    <p class="right_side_title">Проверить статус заказа</p>
+                </a>
+                <a href="../../pages/index.html">
+                    <button class="right_side_button">
+                    <img class="right_side_button_image" src="../../img/steam.png" alt="steam">
+                    Пополнить BUFF
+                </button>
+                </a>
+            </section>
+    
+            <ion-icon class="header_open" name="menu-outline"></ion-icon>
+    
+            <div class="header_burger">
+                <ion-icon class="header_burger_close" name="close-outline"></ion-icon>
+                <ul class="header_burger_links">
+                    <li><a class="header_burger_link" href="index.html">Пополнить Buff</a></li>
+                    <li><a class="header_burger_link" href="../../faq.html">FAQ</a></li>
+                    <li><a class="header_burger_link" href="#"  onclick="openModals()">Контакты</a></li>
+                    <div id="myModals" class="modal">
+    
+                        <!-- Содержимое модального окна -->
+                        <div class="modal-content">
+                          <span class="closes" onclick="closeModals()">&times;</span>
+                          <h2>Контакты</h2>
+                          <p class="question">По любым вопросам обращайтесь по  контактам укзанном ниже</p>
+                          <div class="icons-container">
+                          <div class="icons">
+                            <img src="../../img/icons/telegram.svg"  alt="">
+                            <a class="telegra-icon" href="#">
+                                telegram
+                            </a>
+                          </div>
+                            <div class="icons">
+                            <img src="../../img/icons/discord.svg"   alt="">
+                            <a class="telegra-icon" href="#">
+                                discord
+                            </a>
+                          </div>
+                        </div>
+                        <div class="icons-container">
+                          <div class="icons"> 
+                            <img  src="../../img/icons/vk.svg" alt="">
+                            <a class="telegra-icon" href="#">
+                                VKontakte
+                            </a>
+                          </div>
+                        </div>
+                        </div>
+                      
+                      </div>
+                    <li><a class="header_burger_link" href="#">Отзывы</a></li>
+                    <li><a class="header_burger_link" href="#">100$ FOR FREE</a></li>
+                    <li><a class="header_burger_link" href="index.html">Проверить статус заказа</a></li>
+                </ul>
+            </div>
+        </header>
+    
+        <main class="main">
+            <form class="main_formbox" action="">
+                <h1 class="main_form_headtitle">Проверьте свои данные!</h1>
+
+                <p class="main_form_title">Сохраните токен заказа</p>
+                <div class="input_box_header">
+                    <input class="main_form_input" type="text" placeholder="0332980171612560">
+                    <ion-icon class="input_box_icon" name="copy-outline"></ion-icon>
+                </div>
+
+                <div class="inputs_title">
+                    <p>Вы платите</p>
+                    <p>Вы получаете</p>
+                </div>
+                <div class="main_form_inputs">
+                    <div class="input_box">
+                        <input class="input_box_input" id="input1" type="text" placeholder="Сумма" oninput="updateSecondInput()">
+                        <ion-icon class="input_box_icon" name="copy-outline"></ion-icon>
+                    </div>
+                    <div class="input_box">
+                        <input class="input_box_input" id="input2" type="text" placeholder="00,00">
+                        <ion-icon class="input_box_icon" name="copy-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <p class="main_form_title">Совершите оплату по данным реквизитам</p>
+                <div class="input_box_header">
+                    <input class="main_form_input" type="text" placeholder="2200 7003 2345 7711">
+                    <ion-icon class="input_box_icon" name="copy-outline"></ion-icon>
+                </div>
+                <p class="main_form_title">Ваш логин Alipay / WeChat или имя фамилия  </p>
+                <div class="input_box_header">
+                    <input class="main_form_input" type="text" placeholder="huanospablo">
+                    <ion-icon class="input_box_icon" name="copy-outline"></ion-icon>
+                </div>
+
+                <button class="main_form_button">Я оплатил заказ</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

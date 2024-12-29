@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="../js/script.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>BuffCity</title>
+</head>
+<body>
+    
+    <div class="global">
+        <header class="header">
+            <section class="header_section">
+                <a href="../index.html">
+                    <img class="header_section_logo" src="./img/Logo BuffCity.png" alt="logo">
+                </a>
+                <ul>
+                    <li><a class="header_section_link" href="../faq.html">FAQ</a></li>
+                    <li><a class="header_section_link" href="#" onclick="openModal()">Контакты</a></li>
+                    <div id="myModal" class="modal">
+    
+                        <!-- Содержимое модального окна -->
+                        <div class="modal-content">
+                          <span class="close" onclick="closeModal()">&times;</span>
+                          <h1 class="contact_title">Контакты</h2>
+                            <p class="question">По любым вопросам обращайтесь по  контактам укзанном ниже</p>
+                          <div class="icons-container">
+                          <div class="icons">
+                            <img src="../img/icons/telegram.svg" width="30" alt="">
+                            <a class="telegra-icon"  href="#">
+                                Telegram 
+                            </a>
+                          </div>
+                            <div class="icons">
+                            <img src="../img/icons/discord.svg" width="30"  alt="">
+                            <a class="telegra-icon" href="#">
+                                Discord 
+                            </a>
+                          </div>
+                        </div>
+                        <div class="icons-container">
+                          <div class="icons"> 
+                            <img  src="../img/icons/vk.svg" width="30" alt="">
+                            <a class="telegra-icon" href="#">
+                                VK 
+                            </a>
+                          </div>
+                        </div>
+                        </div>
+                      
+                      </div>
+                    <li><a class="header_section_link" href="#">Отзывы</a></li>
+                </ul>
+                <button class="header_section_button">100$ FOR FREE</button>
+            </section>
+            <section class="header_section right_side">
+                <a href="payed/index.html">
+                    <p class="right_side_title">Проверить статус заказа</p>
+                </a>
+                <a href="../pages/index.html">
+                    <button class="right_side_button">
+                    <img class="right_side_button_image" src="./img/steam.png" alt="steam">
+                    Пополнить BUFF
+                </button>
+                </a>
+            </section>
+    
+            <ion-icon class="header_open" name="menu-outline"></ion-icon>
+    
+            <div class="header_burger">
+                <ion-icon class="header_burger_close" name="close-outline"></ion-icon>
+                <ul class="header_burger_links">
+                    <li><a class="header_burger_link" href="pages/index.html">Пополнить Buff</a></li>
+                    <li><a class="header_burger_link" href="../faq.html">FAQ</a></li>
+                    <li><a class="header_burger_link" href="#"  onclick="openModals()">Контакты</a></li>
+                    <div id="myModals" class="modal">
+    
+                        <!-- Содержимое модального окна -->
+                        <div class="modal-content">
+                          <span class="closes" onclick="closeModals()">&times;</span>
+                          <h2>Контакты</h2>
+                          <p class="question">По любым вопросам обращайтесь по  контактам укзанном ниже</p>
+                          <div class="icons-container">
+                          <div class="icons">
+                            <img src="../img/icons/telegram.svg"  alt="">
+                            <a class="telegra-icon" href="#">
+                                telegram
+                            </a>
+                          </div>
+                            <div class="icons">
+                            <img src="../img/icons/discord.svg"   alt="">
+                            <a class="telegra-icon" href="#">
+                                discord
+                            </a>
+                          </div>
+                        </div>
+                        <div class="icons-container">
+                          <div class="icons"> 
+                            <img  src="../img/icons/vk.svg" alt="">
+                            <a class="telegra-icon" href="#">
+                                VKontakte
+                            </a>
+                          </div>
+                        </div>
+                        </div>
+                      
+                      </div>
+                    <li><a class="header_burger_link" href="#">Отзывы</a></li>
+                    <li><a class="header_burger_link" href="#">100$ FOR FREE</a></li>
+                    <li><a class="header_burger_link" href="payed/index.html">Проверить статус заказа</a></li>
+                </ul>
+            </div>
+        </header>
+    
+        <main class="main">
+    
+            <img class="background_image first" src="./images/2.png" alt="">
+            <img class="background_image second" src="./images/1.png" alt="">
+            <img class="background_image third" src="./images/3.png" alt="">
+            <img class="background_image fouth" src="./images/1.png" alt="">
+            <img class="background_image fift" src="./images/3.png" alt="">
+            <img class="background_image six" src="./images/2.png" alt="">
+            <img class="background_image seven" src="./images/1.png" alt="">
+            <img class="background_image eight" src="./images/2.png" alt="">
+    
+            <section class="main_formbox"><br>
+                <form class="main_form"  action="">
+                    <div class="main-texts-container">
+                        <div class="main-texts-box">
+                            <h3>Ваш способ оплаты</h3>
+                            <p class="main-text-steam"><span style="color: #616161;">Buff</span></p>
+                        </div>
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+
+                    <div class="main-payments-container">
+                        <div class="main-payments-box">
+                            <button class="main-payments-methods">
+                                <img src="images/карты/Mir-logo.SVG.svg.png" width="80" alt="">
+                            </button>
+                        </div>
+                        <div class="main-payments-box">
+                            <button class="main-payments-methods">
+                                <img src="images/карты/ps-sbp2.png" width="60" alt="">
+                            </button>
+                        </div>
+                        <div class="main-payments-box">
+                            <button class="main-payments-methods">
+                                <img src="images/карты/qiwi-cryptocurrency-icon-2048x2048-6sdvi8tu.png" width="60" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="main-payments-container">
+                        <div class="main-payments-box">
+                            <button class="main-payments-methods ">
+                                <img src="images/карты/Tether-USDT-icon-1.png" width="60" alt="">
+                            </button>
+                        </div>
+                        <div class="main-payments-box">
+                            <button class="main-payments-methods">
+                                <img src="images/карты/Bitcoin.svg.webp" width="60" alt="">
+                            </button>
+                        </div>
+                        <div class="main-payments-box">
+                            <button class="main-payments-methods">
+                                <img src="images/карты/0019881_yoomoney-money_550.png" width="60" alt="">
+                            </button>
+                        </div>
+                    </div>
+                
+                    <div class="main_form_container margin">
+                        <p class="main_form_container_title">Платёжные данные</p>
+                        <div class="main_form_container_buttons">
+                            <button class="main_form_container_button curency active">RUB</button>
+                            <button class="main_form_container_button curency">USD</button>
+                        </div>
+                    </div>
+    
+                    <div class="main_form_container margin">
+                        <p class="main_form_container_title">Промокод (При наличии)</p>
+                        <input class="main_form_container_input" type="text" placeholder="#buffcity163">
+                    </div>
+
+                    
+                    <div class="main_form_container margin">
+                        <p class="main_form_container_title">Сканировать QR</p>
+                        <div class="input-group">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="qrInput" accept="image/*" onchange="previewImage()">
+                                <label class="custom-file-label" for="qrInput">Выберите файл</label>
+                            </div>
+                            <div id="result" class="mt-2"></div>
+                        </div>
+                    </div>
+                    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+                    
+                    <script>
+                        function previewImage() {
+                            var fileInput = document.getElementById('qrInput');
+                            var file = fileInput.files[0];
+                            var reader = new FileReader();
+                    
+                            reader.onload = function(e) {
+                                var imageSrc = e.target.result;
+                                var resultContainer = document.getElementById('result');
+                                resultContainer.innerHTML = '<img src="' + imageSrc + '" class="img-fluid" alt="Preview">';
+                            };
+                    
+                            reader.readAsDataURL(file);
+                        }
+                    </script>
+
+                    
+                  
+                    <div class="main_form_container margin">
+                        <p class="main_form_container_title">Итого</p>
+                        <input class="main_form_container_input" type="text" value="100.000 ₽" readonly>
+                    </div>
+    
+                    <button class="main_form_button">Пополнить</button>
+                    <p class="main_form_undertitle">*Нажимая кнопку пополнить вы соглашаетесь с нашей политикой конфидециальности</p>
+                </form>
+            </section>
+        </main>
+    
+        <footer class="footer">
+            <section class="footer_inner">
+                <div class="footer_inner_titlebox">
+                    <p class="footer_inner_titlebox_headtitle">1. Заполните форму</p>
+                    <p class="footer_inner_titlebox_subtitle">Выбери интересующую тебя валюту и укажи сумму пополнения. Введи свой логин Alipay...</p>
+                </div>
+                <div class="footer_inner_titlebox">
+                    <p class="footer_inner_titlebox_headtitle">2. Оплата</p>
+                    <p class="footer_inner_titlebox_subtitle">Выбери способ пополнения баланса. Произведи оплату по полученным реквизитам</p>
+                </div>
+                <div class="footer_inner_titlebox">
+                    <p class="footer_inner_titlebox_headtitle">3. Почти всё готово</p>
+                    <p class="footer_inner_titlebox_subtitle">Сохрани token заказа. Ожидай 2–3 минуты, твой баланс будет пополнен</p>
+                </div>
+            </section>
+    
+            <p class="footer_title">С нами работают:</p>
+    
+            <marquee behavilor="alternate" scrollamount="20">
+                <div class="footer_brends">
+                <img class="footer_brends_image" src="./images/Гугел.png" alt="">
+                <img class="footer_brends_image" src="./images/Apple_logo_grey 1.png" alt="">
+                <img class="footer_brends_image" src="./images/Амазаогн.png" alt="">
+                <img class="footer_brends_image" src="./images/Купикод.png" alt="">
+            </div>
+
+            <div class="footer_icons">
+                <img class="background_image first" src="./images/1.png" alt="">
+                <img class="background_image second" src="./images/2.png" alt="">
+                <img class="background_image third" src="./images/3.png" alt="">
+                <img class="background_image fouth" src="./images/1.png" alt="">
+            </div>
+            </marquee>
+            
+        </footer>
+    </div>
+</body>
+</html>
